@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+    scroll-padding-top: 200px;
+}
+
+body {
+    background-color: #495057;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0px;
+    z-index: 999;
+}
+
+.navbar-logo {
+    object-fit: cover;
+    width: 6rem;
+    height: 5rem;
+    border-radius: 10px;
+    aspect-ratio: 6 / 4;
+}
+
+.nav-links-ul {
+    display: flex;
+}
+
+.nav-links-li {
+    margin: 0px 0px;
+    list-style: none;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.nav-links-li:first-child {
+    padding-left: 0px;
+}
+
+.nav-links-li:last-child {
+    padding-right: 0px;
+}
+
+.nav-links-anch {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links-anch:hover {
+    font-size: 20px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+#header-btn {
+    margin: 0px 10px;
+    border: none;
+    background: none;
+}
+
+#header-btn:first-child {
+    margin: 0px 20px 0px 0px;
+}
+
+.header-btn-anch {
+    display: block;
+    padding: 8px 25px;
+    background-color: #ffa500;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.header-btn-anch:hover {
+    font-size: 12px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.main-container {
+    transform: translateY(7.5rem);
+}
+
+.welcome-contanier {
+    background-image: url('../assets/Img/no-pain-no-gain(1).jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    aspect-ratio: 10 / 7;
+}
+
+.welcome-content {
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+
+.welcome-h1 {
+    background-image: linear-gradient(to right top, #f74c06, #f96e00, #fa8a00, #faa412, #f9bc2c);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+.welcome-h1 small {
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.welcome-span {
+    margin: 20px 0px 0px 0px;
+    display: block;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#welcome-register-btn {
+    margin: 50px auto 0;
+    border: none;
+    background: none;
+}
+
+#welcome-register-btn-anch {
+    display: block;
+    padding: 15px 30px;
+    background-color: #ffa500;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.2;
+}
+
+#welcome-register-btn-anch:hover {
+    font-size: 12px;
+    background-color: #ff0000;
+    color: #fff;
+    transition: linear 0.5;
+}
+
+#cen-about-us {
+    width: 50%;
+    margin: 100px auto 0px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 10px;
+    font-style: italic;
+    border-bottom: 10px solid #000;
+    border-width: 4px;
+    border-spacing: 10px;
+}
+
+
+.about-us-contanier {
+    background-color: rgba(0, 2, 10, 0.86);
+    margin: 20px 0px 0px;
+}
+
+.about-us-content {
+    padding: 60px 80px;
+}
+
+.about-us-video-content {
+    margin: auto 0;
+    border: 5px solid white;
+    border-style: ridge;
+}
+
+#about-us-para {
+    width: 100%;
+    text-align: justify;
+    color: #ebebeb;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+
+#cen-pricing {
+    width: 50%;
+    margin: 50px auto 0px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 10px;
+    font-style: italic;
+    border-bottom: 10px solid #000;
+    border-width: 4px;
+    border-spacing: 10px;
+}
+
+.pricing-contanier {
+    background-color: rgba(0, 2, 10, 0.86);
+    margin: 20px 0px 0px;
+    padding: 5% 0px 5%;
+}
+
+
+#pricing-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#pricing-card-content {
+    height: 380px;
+    width: 350px;
+    padding: 30px 0px;
+    text-align: center;
+    margin: 0px 50px;
+    /* background-color: #333533; */
+    background-image: linear-gradient(to top, #ee821a, #ed8c17, #eb9615, #e9a015, #e7a918);
+    border-radius: 15px;
+}
+
+
+#pricing-card-content:first-child {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+}
+
+#pricing-card-content:last-child {
+    height: 300px;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.pricing-card-h1 {
+    font-size: 24px;
+    color: #ebebeb;
+
+}
+
+.pricing-card-span {
+    display: block;
+    margin: 20px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ebebeb;
+}
+
+.pricing-card-label {
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.fa-calendar-days,
+.fa-clock,
+.fa-check,
+.fa-check {
+    margin: 0px 10px 0px 0px;
+    color: #000;
+    font-size: 20px;
+}
+
+
+#cen-contact-us {
+    width: 50%;
+    margin: 30px auto 20px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 10px;
+    font-style: italic;
+    border-bottom: 10px solid #000;
+    border-width: 4px;
+    border-spacing: 10px;
+}
+
+.contact-us-contanier {
+    background-image: url(../assets/Img/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 10 / 7;
+    position: relative;
+}
+
+#contact-us-content {
+    background-color: rgb(33, 37, 41, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-us-para {
+    margin: 20px;
+    color: #fff;
+}
+
+.fa-location-dot,
+.fa-phone-volume,
+.fa-envelope {
+    font-size: 30px;
+    margin: 10px 0px 20px;
+}
+
+.footer {
+    background-color: #000;
+    padding: 20px 0px;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.footer-li {
+    padding: 0px 20px;
+}
+
+.footer-anch {
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    display: block;
+    font-size: 8px;
+    text-align: center;
+    color: #ebebeb;
+}
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to top, #ee821a, #ed8c17, #eb9615, #e9a015, #e7a918);
+}
+::-webkit-scrollbar-track{
+    background-color: none;
+}
+
